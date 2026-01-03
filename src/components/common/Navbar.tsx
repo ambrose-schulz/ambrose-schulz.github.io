@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
     return (
@@ -39,13 +40,19 @@ const Navbar = () => {
                     <div className="flex items-center gap-3">
                         {/* Notifications and Auth buttons */}
                         <div className="flex items-center gap-3">
-                            <button className="hidden sm:flex text-text-muted hover:text-primary font-medium text-sm px-3 py-2">
+                            <Link
+                                href="/login"
+                                className="hidden sm:flex text-text-muted hover:text-primary font-medium text-sm px-3 py-2 transition-colors"
+                            >
                                 Đăng nhập
-                            </button>
-                            <button className="bg-primary hover:bg-primary-hover text-surface-light text-sm font-medium rounded-lg px-4 py-2 transition-all shadow-lg shadow-primary/25 flex items-center gap-2">
+                            </Link>
+                            <Link
+                                href="/register"
+                                className="bg-primary hover:bg-primary-hover text-surface-light text-sm font-medium rounded-lg px-4 py-2 transition-all shadow-lg shadow-primary/25 flex items-center gap-2"
+                            >
                                 <span className="material-symbols-outlined text-[18px]">person_add</span>
                                 <span>Đăng ký</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

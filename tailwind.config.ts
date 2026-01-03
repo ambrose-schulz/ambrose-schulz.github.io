@@ -9,7 +9,7 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                "primary": "#6B2418",
+                "primary": "rgb(107 36 24)",
                 "primary-hover": "#8a3020",
                 "background-light": "#F5E6D3",
                 "background-dark": "#F5E6D3",
