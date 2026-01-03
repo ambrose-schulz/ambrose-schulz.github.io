@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const lexend = Lexend({
+    subsets: ["latin", "vietnamese"],
+    weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
     title: "Trang chủ - Truyện Hay",
@@ -22,7 +25,7 @@ export default function RootLayout({
                     rel="stylesheet"
                 />
             </head>
-            <body className={`${inter.className} bg-background-light text-text-main min-h-screen flex flex-col overflow-x-hidden`}>
+            <body className={`${lexend.className} bg-background-light text-text-main min-h-screen flex flex-col overflow-x-hidden`}>
                 {children}
             </body>
         </html>
