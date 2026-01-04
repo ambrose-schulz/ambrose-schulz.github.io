@@ -10,6 +10,11 @@ const lexend = Lexend({
 export const metadata: Metadata = {
     title: "Trang chủ - Truyện Hay",
     description: "Website đọc truyện hay nhất",
+    icons: {
+        icon: '/favicon.ico',
+        shortcut: '/favicon.ico',
+        apple: '/favicon.ico',
+    },
 };
 
 export default function RootLayout({

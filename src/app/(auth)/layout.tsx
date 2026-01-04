@@ -15,9 +15,9 @@ export default function AuthLayout({
             </div>
 
             <div className="sm:mx-auto sm:w-full sm:max-w-md relative z-10">
-                <Link href="/" className="flex items-center justify-center gap-2 mb-6 group">
-                    <div className="text-primary p-1 rounded-lg">
-                        <span className="material-symbols-outlined text-[40px]">menu_book</span>
+                <Link href="/" className="flex items-center justify-center gap-3 mb-6 group">
+                    <div className="w-12 h-12 rounded-xl overflow-hidden border border-border-dark/50 shadow-sm transition-transform group-hover:scale-105">
+                        <img src="/logo.jpg" alt="Truyện Hay Logo" className="w-full h-full object-cover" />
                     </div>
                     <h2 className="text-3xl font-black tracking-tight text-primary">
                         Truyện<span className="text-text-main">Hay</span>

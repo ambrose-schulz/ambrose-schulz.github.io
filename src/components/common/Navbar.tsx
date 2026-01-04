@@ -6,12 +6,14 @@ const Navbar = () => {
         <nav className="sticky top-0 z-50 w-full border-b border-border-dark bg-surface-light/95 backdrop-blur-md">
             <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between gap-4">
-                    <div className="flex items-center gap-2">
-                        <div className="text-primary p-1 rounded-lg text-primary">
-                            <span className="material-symbols-outlined text-[32px]">menu_book</span>
-                        </div>
-                        <Link className="text-xl font-bold tracking-tight text-primary hidden sm:block" href="/">
-                            Truyện<span className="text-text-main">Hay</span>
+                    <div className="flex items-center">
+                        <Link className="flex items-center gap-3 group" href="/">
+                            <div className="w-10 h-10 rounded-lg overflow-hidden border border-border-dark/50 shadow-sm transition-transform group-hover:scale-105">
+                                <img src="/logo.jpg" alt="Truyện Hay Logo" className="w-full h-full object-cover" />
+                            </div>
+                            <span className="text-xl font-bold tracking-tight text-primary hidden sm:block">
+                                Truyện<span className="text-text-main">Hay</span>
+                            </span>
                         </Link>
                     </div>
                     <div className="hidden md:flex flex-1 max-w-md mx-4">
