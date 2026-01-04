@@ -38,6 +38,9 @@ const Navbar = () => {
                         <Link className="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="/search-advanced">
                             Tìm nâng cao
                         </Link>
+                        <Link className="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="/ranking">
+                            Bảng xếp hạng
+                        </Link>
                     </div>
                     <div className="flex items-center gap-3">
                         <div className="relative group">

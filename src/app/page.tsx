@@ -17,7 +17,7 @@ export default function Home() {
                 <BookSection
                     title="Tiếp Tục Đọc"
                     icon="history_edu"
-                    viewAllLink="#"
+                    viewAllLink="/genres"
                 >
                     <div className="flex gap-4 overflow-x-auto pb-4 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 scroll-smooth">
                         {CONTINUE_READING.map(book => (
@@ -39,7 +39,7 @@ export default function Home() {
                 <BookSection
                     title="Truyện Đề Cử"
                     icon="verified"
-                    viewAllLink="#"
+                    viewAllLink="/ranking"
                 >
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                         {RECOMMENDED_BOOKS.map(book => (
@@ -52,7 +52,7 @@ export default function Home() {
                 {/* Two Column Layout for Updates and Rankings */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                     <div className="lg:col-span-8">
-                        <BookSection title="Mới Cập Nhật" icon="update" viewAllLink="#">
+                        <BookSection title="Mới Cập Nhật" icon="update" viewAllLink="/genres">
                             <div className="flex flex-col gap-3">
                                 {UPDATED_BOOKS.map(book => (
                                     <BookCard key={book.id} book={book} variant="horizontal" />
